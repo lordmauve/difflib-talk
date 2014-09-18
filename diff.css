@@ -1,0 +1,186 @@
+table.diff {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0 0 1em;
+    border-bottom: solid silver 1px;
+    background-color: white;
+}
+
+.diff td {
+    vertical-align: top;
+    font-family: Consolas, monospace;
+    white-space: pre;  /* fallback for browsers that don't understand pre-wrap */
+    white-space: pre-wrap;
+    font-size: 10pt;
+    line-height: 1.2em;
+    padding: 0 0 0 0.1em;
+    margin: 0;
+
+    border-left: solid silver 1px;
+    border-right: solid silver 1px;
+}
+
+.nowrap .diff td {
+    white-space: pre;
+}
+
+.diff .addition {
+    background-color: #bfc;
+}
+
+/* In two minds as to whether this looks better or not.
+.diff .addition td:nth-child(2),
+.diff .deletion td:nth-child(4) {
+    background-color: #ddd;
+}*/
+
+.diff .deletion {
+    background-color: #fcc;
+}
+
+.diff .change {
+    background-color: #feb;
+}
+
+.diff .blank {
+    background-color: #d8d8d8;
+}
+
+.diff .delta {
+    background-color: #ffe855;
+}
+
+.diff td.num {
+    color: gray;
+    padding: 0 0.2em;
+    background-color: white;
+    min-width: 1.3em;
+}
+
+.diff th {
+    background-color: #EEE;
+    font-weight: normal;
+    text-align: left;
+    padding: 0.1em 0.5em;
+    border: solid #CCC 1px;
+    color: #666;
+}
+
+.diff th.filename {
+    padding: 0.2em 0.5em;
+    background-color: #DDD;
+
+    color: black;
+    font-weight: bold;
+}
+
+.diff .selected-hover,
+.diff .selected {
+    background-color: #99ccff;
+}
+
+.diff .selected-hover.addition,
+.diff .selected.addition {
+    background-color: #77cce6;
+}
+
+.diff .selected-hover.change,
+.diff .selected.change {
+    background-color: #99c3dd;
+}
+
+.diff .selected-hover.deletion,
+.diff .selected.deletion {
+    background-color: #99b2e6;
+}
+
+.diff .selected-hover .delta,
+.diff .selected .delta {
+    background-color: #99c0aa;
+}
+
+/* name */
+.diff .n {
+    color: black;
+}
+
+/* comment */
+.diff .c {
+    color: #800080;
+}
+
+/* string */
+.diff .s {
+    color: #800000;
+}
+
+.diff .si {
+    color: #800000;
+}
+
+/* keyword */
+.p-Indicator,
+.diff .k,
+.diff .ow {
+    color: #008080;
+    font-weight: bold;
+}
+
+/* docstring */
+.diff .sd {
+    color: #060;
+    font-weight: bold;
+}
+
+/* import statement */
+.diff .kn {
+    color: #800080;
+    font-weight: bold;
+}
+
+/* number */
+.diff .mf,
+.diff .mi {
+    color: #00008B;
+}
+
+/* self, cls, True, False */
+.diff .bp {
+    color: black;
+    font-weight: bold;
+}
+
+/* function/class name */
+.diff .nf,
+.diff .nc {
+    color: #00008B;
+}
+
+/* builtins */
+.diff .nb {
+    color: #4B0082;
+    font-weight: bold;
+}
+
+/* decorator */
+.diff .nd {
+    color: #DAA520;
+}
+
+.diff .collapsible tr:first-child td {
+    border-top: dotted black 1px;
+}
+
+.diff .collapsible tr:last-child td {
+    border-bottom: dotted black 1px;
+}
+
+.diff .collapsed td {
+    text-align: center;
+    padding: 1em;
+
+    font-family: sans-serif;
+    font-weight: normal;
+    color: gray;
+    cursor: pointer;
+}
