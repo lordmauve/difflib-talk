@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="blockwise-line-similarity.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
      inkscape:cx="128.55845"
-     inkscape:cy="530.42177"
+     inkscape:cy="247.57906"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -71,7 +71,7 @@
        id="rect2989"
        inkscape:connector-curvature="0" />
     <rect
-       y="783.40912"
+       y="712.69843"
        x="71.519539"
        height="67.123741"
        width="270.05692"
@@ -83,18 +83,48 @@
        width="269.76688"
        height="63.803246"
        x="343.45197"
-       y="642.18396" />
+       y="571.47327" />
     <rect
        style="fill:#ffeeaa;fill-opacity:1;stroke:#c8ab37;stroke-width:2"
        id="rect3770"
        width="541.44177"
        height="76.771591"
        x="71.720833"
-       y="706.89001" />
+       y="636.17932" />
     <path
        inkscape:connector-curvature="0"
        id="path3768"
-       d="m 477.80542,807.90209 -47.3125,-58.75 21.03125,0 0,-36.28125 52.53125,0 0,36.28125 21.0625,0 -47.3125,58.75 z"
+       d="m 477.80542,737.19141 -47.3125,-58.75 21.03125,0 0,-36.28125 52.53125,0 0,36.28125 21.0625,0 -47.3125,58.75 z"
        style="fill:#ffffff;fill-opacity:0.35638296;stroke:#000000;stroke-width:2" />
+    <g
+       id="g5755"
+       transform="matrix(1,0,0,-1,0,2054.4178)">
+      <rect
+         y="1057.1604"
+         x="71.519539"
+         height="67.123741"
+         width="270.05692"
+         id="rect5747"
+         style="fill:#ffaaaa;fill-opacity:1;stroke:#aa0000;stroke-width:0.99999994" />
+      <rect
+         style="fill:#c6e9af;fill-opacity:1;stroke:#447821;stroke-width:0.88746321"
+         id="rect5749"
+         width="269.76688"
+         height="63.803246"
+         x="343.45197"
+         y="915.9353" />
+      <rect
+         style="fill:#ffeeaa;fill-opacity:1;stroke:#c8ab37;stroke-width:2"
+         id="rect5751"
+         width="541.44177"
+         height="76.771591"
+         x="71.720833"
+         y="980.64136" />
+    </g>
+    <path
+       style="fill:#ffffff;fill-opacity:0.35638296;stroke:#000000;stroke-width:2"
+       d="m 477.80542,1153.3742 -47.3125,-58.75 21.03125,0 0,-36.2813 52.53125,0 0,36.2813 21.0625,0 -47.3125,58.75 z"
+       id="path5753"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
