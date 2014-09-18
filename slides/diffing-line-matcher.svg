@@ -42,7 +42,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
      inkscape:cx="184.46646"
-     inkscape:cy="707.44928"
+     inkscape:cy="-1071.2267"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -67,6 +67,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g5818"
+       id="use5867"
+       transform="translate(0,175.76655)"
+       width="744.09448"
+       height="1052.3622" />
     <use
        x="0"
        y="0"
@@ -971,5 +979,187 @@
        width="62.401001"
        id="rect5739"
        style="fill:#ffd42a;stroke:none" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text5760"
+       y="1547.9587"
+       x="58.588848"
+       style="font-size:28.58038902px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Consolas;-inkscape-font-specification:Consolas"
+       xml:space="preserve"><tspan
+         y="1547.9587"
+         x="58.588848"
+         id="tspan5762"
+         sodipodi:role="line">- for name, book in getBooks():</tspan><tspan
+         id="tspan5764"
+         y="1583.6842"
+         x="58.588848"
+         sodipodi:role="line">-     book_names[book.id] = name</tspan><tspan
+         id="tspan5766"
+         y="1619.4097"
+         x="58.588848"
+         sodipodi:role="line">+ for book in getBooks():</tspan><tspan
+         id="tspan5768"
+         y="1655.1353"
+         x="58.588848"
+         sodipodi:role="line">+     if book.active:</tspan><tspan
+         id="tspan5770"
+         y="1690.8607"
+         x="58.588848"
+         sodipodi:role="line">+         return convertToAccount(book)</tspan></text>
+    <use
+       height="1052.3622"
+       width="744.09448"
+       transform="translate(0,788.92914)"
+       id="use5784"
+       xlink:href="#g5713"
+       y="0"
+       x="0" />
+    <g
+       id="g5786"
+       transform="translate(0,647.50778)">
+      <rect
+         style="fill:#ffeeaa;fill-opacity:1;stroke:#c8ab37;stroke-width:0.99999994"
+         id="rect5788"
+         width="645.83252"
+         height="104.74113"
+         x="54.880798"
+         y="1131.8164" />
+      <rect
+         y="1167.1718"
+         x="54.880798"
+         height="34.030449"
+         width="645.83252"
+         id="rect5790"
+         style="color:#000000;fill:#c6e9af;fill-opacity:1;fill-rule:nonzero;stroke:#447821;stroke-width:0.88746315;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <rect
+       style="fill:#ffd42a;stroke:none"
+       id="rect5792"
+       width="94.725883"
+       height="35.040611"
+       x="120.82745"
+       y="1779.3242" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.58038902px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Consolas;-inkscape-font-specification:Consolas"
+       x="58.588848"
+       y="1803.5273"
+       id="text5794"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5796"
+         x="58.588848"
+         y="1803.5273">for name, book in getBooks():</tspan><tspan
+         id="tspan5798"
+         sodipodi:role="line"
+         x="58.588848"
+         y="1839.2528" /><tspan
+         sodipodi:role="line"
+         x="58.588848"
+         y="1874.9783"
+         id="tspan5800">    book_names[book.id] = name</tspan></text>
+    <rect
+       y="1990.446"
+       x="624.92908"
+       height="35.040611"
+       width="15.933983"
+       id="rect5802"
+       style="fill:#ffd42a;stroke:none" />
+    <rect
+       style="fill:#ffd42a;stroke:none"
+       id="rect5812"
+       width="431.10669"
+       height="35.040611"
+       x="128.90868"
+       y="1990.446" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text5804"
+       y="1946.0452"
+       x="58.588848"
+       style="font-size:28.58038902px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Consolas;-inkscape-font-specification:Consolas"
+       xml:space="preserve"><tspan
+         y="1946.0452"
+         x="58.588848"
+         id="tspan5806"
+         sodipodi:role="line">for book in getBooks():</tspan><tspan
+         y="1981.7706"
+         x="58.588848"
+         sodipodi:role="line"
+         id="tspan5808">    if book.active:</tspan><tspan
+         id="tspan5810"
+         y="2017.4961"
+         x="58.588848"
+         sodipodi:role="line">        return convertToAccount(book)</tspan></text>
+    <g
+       transform="translate(0,995.00031)"
+       id="g5818">
+      <rect
+         y="1131.8164"
+         x="54.880798"
+         height="35.0406"
+         width="645.83252"
+         id="rect5820"
+         style="fill:#ffeeaa;fill-opacity:1;stroke:#c8ab37;stroke-width:0.99999994" />
+      <rect
+         style="color:#000000;fill:#ffaaaa;fill-opacity:1;fill-rule:nonzero;stroke:#aa0000;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5822"
+         width="645.83252"
+         height="34.030449"
+         x="54.880798"
+         y="1167.1718" />
+      <rect
+         y="1201.517"
+         x="54.880798"
+         height="71.406097"
+         width="645.83252"
+         id="rect5846"
+         style="color:#000000;fill:#c6e9af;fill-opacity:1;fill-rule:nonzero;stroke:#447821;stroke-width:0.88746315;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <rect
+       y="2126.8167"
+       x="120.82745"
+       height="35.040611"
+       width="94.725883"
+       id="rect5824"
+       style="fill:#ffd42a;stroke:none" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text5826"
+       y="2151.0198"
+       x="58.588848"
+       style="font-size:28.58038902px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Consolas;-inkscape-font-specification:Consolas"
+       xml:space="preserve"><tspan
+         y="2151.0198"
+         x="58.588848"
+         sodipodi:role="line"
+         id="tspan5830">for name, book in getBooks():</tspan><tspan
+         id="tspan5832"
+         y="2186.7454"
+         x="58.588848"
+         sodipodi:role="line">    book_names[book.id] = name</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.58038902px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Consolas;-inkscape-font-specification:Consolas"
+       x="58.588848"
+       y="2327.8828"
+       id="text5838"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5840"
+         x="58.588848"
+         y="2327.8828">for book in getBooks():</tspan><tspan
+         sodipodi:role="line"
+         x="58.588848"
+         y="2363.6084"
+         id="tspan5869" /><tspan
+         id="tspan5842"
+         sodipodi:role="line"
+         x="58.588848"
+         y="2399.3337">    if book.active:</tspan><tspan
+         sodipodi:role="line"
+         x="58.588848"
+         y="2435.0593"
+         id="tspan5844">        return convertToAccount(book)</tspan></text>
   </g>
 </svg>
