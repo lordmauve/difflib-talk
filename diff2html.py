@@ -540,6 +540,8 @@ def memoize(func):
             # Better to not cache than to blow up entirely.
             return func(*args, **kwargs)
 
+    return wrapper
+
 
 
 class FileDiff(object):
@@ -886,128 +888,128 @@ class HTMLDiffFormatter(object):
         # Ensure the original text is cached before we do the timed section
         diff.getOriginal()
 
-          alines, blines = self.getFormattedLines(diff)
-          aplain = diff.getOriginalLines()
-          bplain = diff.getModifiedLines()
+        alines, blines = self.getFormattedLines(diff)
+        aplain = diff.getOriginalLines()
+        bplain = diff.getModifiedLines()
 
-          aver = diff.versions['aver'] or 'New file'
-          bver = diff.versions['bver'] or 'uncommitted'
-          out = [
-              '<table class="diff" id="%s">' % escape(id),
-              '<colgroup><col class="num" width="16"><col width="50%"><col class="num" width="16"><col width="50%"></colgroup>',
-              '    <tr><th colspan="4" class="filename">{file}</th></tr>'.format(file=escape(id)),
-              '    <tr><th colspan="2">{aver}</th><th colspan="2">{bver}</th></tr>'.format(aver=aver, bver=bver)
-          ]
+        aver = diff.versions['aver'] or 'New file'
+        bver = diff.versions['bver'] or 'uncommitted'
+        out = [
+            '<table class="diff" id="%s">' % escape(id),
+            '<colgroup><col class="num" width="16"><col width="50%"><col class="num" width="16"><col width="50%"></colgroup>',
+            '    <tr><th colspan="4" class="filename">{file}</th></tr>'.format(file=escape(id)),
+            '    <tr><th colspan="2">{aver}</th><th colspan="2">{bver}</th></tr>'.format(aver=aver, bver=bver)
+        ]
 
-          def row(a, b, cls=None):
-              """Include a row of output.
+        def row(a, b, cls=None):
+            """Include a row of output.
 
-              a and b are 0-based line numbers, or None to skip that line.
+            a and b are 0-based line numbers, or None to skip that line.
 
-              """
-              if a is not None and a < len(alines):
-                  ahtml = alines[a]
-                  atext = aplain[a]
-                  na = a + 1
-              else:
-                  ahtml = na = ''
+            """
+            if a is not None and a < len(alines):
+                ahtml = alines[a]
+                atext = aplain[a]
+                na = a + 1
+            else:
+                ahtml = na = ''
 
-              if b is not None and b < len(blines):
-                  bhtml = blines[b]
-                  btext = bplain[b]
-                  nb = b + 1
-              else:
-                  bhtml = nb = ''
+            if b is not None and b < len(blines):
+                bhtml = blines[b]
+                btext = bplain[b]
+                nb = b + 1
+            else:
+                bhtml = nb = ''
 
-              if cls == 'change':
-                  ahtml, bhtml = self.highlightChange(ahtml, bhtml, atext, btext)
+            if cls == 'change':
+                ahtml, bhtml = self.highlightChange(ahtml, bhtml, atext, btext)
 
-              out.append(
-                  '    <tr{cls}><td class="num">{na}</td><td>{a}</td><td class="num">{nb}</td><td>{b}</td></tr>'.format(
-                      a=ahtml,
-                      b=bhtml,
-                      cls=' class="%s"' % escape(cls) if cls else '',
-                      na=na,
-                      nb=nb
-                  )
-              )
+            out.append(
+                '    <tr{cls}><td class="num">{na}</td><td>{a}</td><td class="num">{nb}</td><td>{b}</td></tr>'.format(
+                    a=ahtml,
+                    b=bhtml,
+                    cls=' class="%s"' % escape(cls) if cls else '',
+                    na=na,
+                    nb=nb
+                )
+            )
 
-            a = b = 0
+        a = b = 0
 
-            # Regex and replacement have to be written like this
-            # So CVS doesn't replace them.
-            #
-            # Rewriting your source: worst idea ever.
-            #
-            cvs_tag_re = re.compile(r'\$' + r'Id.*?\$')
-            cvs_tag_repl = '$' + 'Id$'
+        # Regex and replacement have to be written like this
+        # So CVS doesn't replace them.
+        #
+        # Rewriting your source: worst idea ever.
+        #
+        cvs_tag_re = re.compile(r'\$' + r'Id.*?\$')
+        cvs_tag_repl = '$' + 'Id$'
 
-            def remove_cvs_tag(l):
-                return cvs_tag_re.sub(cvs_tag_repl, l)
+        def remove_cvs_tag(l):
+            return cvs_tag_re.sub(cvs_tag_repl, l)
 
-            def skippable(sides):
-                off = 0
-                for s in sides:
-                    if s == 'c':
-                        la = remove_cvs_tag(alines[a + off])
-                        lb = remove_cvs_tag(blines[b + off])
-                        if la != lb:
-                            return False
-                        off += 1
-                    elif s == ' ':
-                        off += 1
-                    else:
+        def skippable(sides):
+            off = 0
+            for s in sides:
+                if s == 'c':
+                    la = remove_cvs_tag(alines[a + off])
+                    lb = remove_cvs_tag(blines[b + off])
+                    if la != lb:
                         return False
-                return True
-
-            state = {
-                'collapsing': False
-            }
-
-            def start_collapse():
-                if not state['collapsing']:
-                    out.append('<tbody class="common collapsible">')
-                    state['collapsing'] = True
-
-            def end_collapse():
-                if state['collapsing']:
-                    out.append('</tbody>')
-                    state['collapsing'] = False
-
-            for hunk in diff.iterSections():
-                if isinstance(hunk, Hunk):
-                    sides = detectChanges(hunk)
-                    if skippable(sides):
-                        start_collapse()
-                    else:
-                        end_collapse()
-                    for side in sides:
-                        if side == ' ':
-                            row(a, b, 'common')
-                            a += 1
-                            b += 1
-                        elif side == 'c':
-                            row(a, b, 'change')
-                            a += 1
-                            b += 1
-                        elif side == '-':
-                            row(a, None, 'deletion')
-                            a += 1
-                        elif side == '+':
-                            row(None, b, 'addition')
-                            b += 1
+                    off += 1
+                elif s == ' ':
+                    off += 1
                 else:
-                    collapsible = len(hunk) > 4
-                    if collapsible:
-                        start_collapse()
-                    for l in hunk:
-                        row(a, b)
+                    return False
+            return True
+
+        state = {
+            'collapsing': False
+        }
+
+        def start_collapse():
+            if not state['collapsing']:
+                out.append('<tbody class="common collapsible">')
+                state['collapsing'] = True
+
+        def end_collapse():
+            if state['collapsing']:
+                out.append('</tbody>')
+                state['collapsing'] = False
+
+        for hunk in diff.iterSections():
+            if isinstance(hunk, Hunk):
+                sides = detectChanges(hunk)
+                if skippable(sides):
+                    start_collapse()
+                else:
+                    end_collapse()
+                for side in sides:
+                    if side == ' ':
+                        row(a, b, 'common')
                         a += 1
                         b += 1
+                    elif side == 'c':
+                        row(a, b, 'change')
+                        a += 1
+                        b += 1
+                    elif side == '-':
+                        row(a, None, 'deletion')
+                        a += 1
+                    elif side == '+':
+                        row(None, b, 'addition')
+                        b += 1
+            else:
+                collapsible = len(hunk) > 4
+                if collapsible:
+                    start_collapse()
+                for l in hunk:
+                    row(a, b)
+                    a += 1
+                    b += 1
 
-            end_collapse()
-            out.append('</table>')
-            return '\n'.join(out)
+        end_collapse()
+        out.append('</table>')
+        return '\n'.join(out)
 
 
 def pre(s):
