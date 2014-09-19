@@ -41,14 +41,14 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1"
      inkscape:cx="291.04603"
-     inkscape:cy="621.85265"
+     inkscape:cy="181.85265"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1058"
-     inkscape:window-x="1912"
-     inkscape:window-y="-8"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata3777">
@@ -67,7 +67,10 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g3792">
+       id="g3792"
+       inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/line-changes1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          style="fill:#ffeeaa;fill-opacity:1;stroke:#c8ab37;stroke-width:1"
          id="rect3790"
@@ -87,16 +90,16 @@
          id="text3780"
          y="99.393036"
          x="38.334827"
-         style="font-size:19.64816284px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         style="font-size:21.64816284px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono;font-stretch:normal;font-variant:normal"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono;font-size:21.64816284px"
            y="99.393036"
            x="38.334827"
            id="tspan3782"
            sodipodi:role="line">regs = [getRegistry(name, db=db) for name in names]</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:19.64816284px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         style="font-size:21.64816284px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono;font-stretch:normal;font-variant:normal"
          x="38.334827"
          y="228.39304"
          id="text3784"
@@ -105,11 +108,14 @@
            id="tspan3786"
            x="38.334827"
            y="228.39304"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas">regs = [Registry(name, db=db) for name in settings.REGISTRIES]</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono;font-size:21.64816284px">regs = [Registry(name, db=db) for name in settings.REGISTRIES]</tspan></text>
     </g>
     <g
        id="g5285"
-       transform="translate(0,-79)">
+       transform="translate(0,-79)"
+       inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/line-changes2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <use
          height="1052.3622"
          width="744.09448"
@@ -491,7 +497,10 @@
          style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend)" />
     </g>
     <g
-       id="g5273">
+       id="g5273"
+       inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/line-changes3.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          y="906.36218"
          x="33"
@@ -522,7 +531,7 @@
          y="776.36218" />
       <text
          xml:space="preserve"
-         style="font-size:19.64816284px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         style="font-size:21.64816284px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono;font-stretch:normal;font-variant:normal"
          x="38.334827"
          y="798.39307"
          id="text5251"
@@ -531,7 +540,7 @@
            id="tspan5253"
            x="38.334827"
            y="798.39307"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas">regs = [getRegistry(name, db=db) for name in names]</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono;font-size:21.64816284px">regs = [getRegistry(name, db=db) for name in names]</tspan></text>
       <rect
          style="fill:#ffd42a;stroke:none"
          id="rect5267"
@@ -551,9 +560,9 @@
          id="text5255"
          y="927.39307"
          x="38.334827"
-         style="font-size:19.64816284px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         style="font-size:21.64816284px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono;font-stretch:normal;font-variant:normal"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono;font-size:21.64816284px"
            y="927.39307"
            x="38.334827"
            id="tspan5257"

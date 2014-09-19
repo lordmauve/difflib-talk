@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg5339"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="diffing-line-matcher.svg">
+  <defs
+     id="defs5341">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4462"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="221.05755"
+     inkscape:cy="-920.44982"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5344">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:31.5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono"
+       x="58.588848"
+       y="83.23761"
+       id="text5347"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan5349"
+         x="58.588848"
+         y="83.23761">- for name, book in getBooks():</tspan><tspan
+         sodipodi:role="line"
+         x="58.588848"
+         y="118.9631"
+         id="tspan5351">-     book_names[book.id] = name</tspan><tspan
+         sodipodi:role="line"
+         x="58.588848"
+         y="154.68858"
+         id="tspan5741">+ for book in getBooks():</tspan><tspan
+         sodipodi:role="line"
+         x="58.588848"
+         y="190.41406"
+         id="tspan5743">+     if book.active:</tspan><tspan
+         sodipodi:role="line"
+         x="58.588848"
+         y="226.13956"
+         id="tspan5745">+         book_names[book.id] = book.name</tspan></text>
+    <g
+       id="g3851"
+       inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher3.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <text
+         sodipodi:linespacing="118%"
+         id="text5530"
+         y="780.24286"
+         x="58.588848"
+         style="font-size:31.50000000000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:118%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UbuntuMono;-inkscape-font-specification:UbuntuMono"
+         xml:space="preserve"><tspan
+           y="780.24286"
+           x="58.588848"
+           id="tspan5532"
+           sodipodi:role="line">for name, book in getBooks():</tspan><tspan
+           id="tspan5534"
+           y="815.96832"
+           x="58.588848"
+           sodipodi:role="line">    book_names[book.id] = name</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:31.50000000000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:118%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UbuntuMono;-inkscape-font-specification:UbuntuMono"
+         x="58.588848"
+         y="922.7608"
+         id="text5536"
+         sodipodi:linespacing="118%"><tspan
+           sodipodi:role="line"
+           id="tspan5538"
+           x="58.588848"
+           y="922.7608">for book in getBooks():</tspan><tspan
+           id="tspan5540"
+           sodipodi:role="line"
+           x="58.588848"
+           y="958.48633">    if book.active:</tspan><tspan
+           sodipodi:role="line"
+           x="58.588848"
+           y="994.21179"
+           id="tspan5542">        book_names[book.id] = book.name</tspan></text>
+      <g
+         transform="translate(0,247.48738)"
+         id="g5544">
+        <rect
+           y="508.73499"
+           x="59.19445"
+           height="30.634752"
+           width="47.276115"
+           id="rect5546"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999994" />
+      </g>
+      <rect
+         y="756.22235"
+         x="122.83406"
+         height="30.634752"
+         width="61.418251"
+         id="rect5548"
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+         id="rect5550"
+         width="17.393953"
+         height="30.634752"
+         x="-202.64627"
+         y="756.22235"
+         transform="scale(-1,1)" />
+      <g
+         transform="translate(0,247.48738)"
+         id="g5552">
+        <rect
+           y="508.73499"
+           x="216.77824"
+           height="30.634752"
+           width="61.418251"
+           id="rect5554"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5556"
+           width="32.123829"
+           height="30.634752"
+           x="295.57013"
+           y="508.73499" />
+        <rect
+           y="508.73499"
+           x="343.0473"
+           height="30.634752"
+           width="125.05786"
+           id="rect5558"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5560"
+           width="15.373649"
+           height="30.634752"
+           x="-483.46869"
+           y="508.73499"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5562"
+           width="15.373649"
+           height="30.634752"
+           x="-499.63113"
+           y="508.73499"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5564"
+           width="15.373649"
+           height="30.634752"
+           x="-515.79358"
+           y="508.73499"
+           transform="scale(-1,1)" />
+      </g>
+      <g
+         transform="translate(0,247.48738)"
+         id="g5566">
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-278.40768"
+           height="30.634752"
+           width="155.78485"
+           id="rect5568"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-293.56003"
+           height="30.634752"
+           width="15.373649"
+           id="rect5570"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-358.20981"
+           height="30.634752"
+           width="63.86097"
+           id="rect5572"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5574"
+           width="15.373649"
+           height="30.634752"
+           x="-293.56003"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5576"
+           width="63.86097"
+           height="30.634752"
+           x="-358.20981"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5578"
+           width="15.373649"
+           height="30.634752"
+           x="-373.36209"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5580"
+           width="18.404104"
+           height="30.634752"
+           x="-422.85956"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-373.36209"
+           height="30.634752"
+           width="15.373649"
+           id="rect5582"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-404.67685"
+           height="30.634752"
+           width="30.525934"
+           id="rect5584"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999976" />
+      </g>
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+         id="rect5586"
+         width="18.404104"
+         height="30.634752"
+         x="-453.16412"
+         y="791.57764"
+         transform="scale(-1,1)" />
+      <rect
+         transform="scale(-1,1)"
+         y="791.57764"
+         x="-530.94586"
+         height="30.634752"
+         width="63.86097"
+         id="rect5588"
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+      <g
+         id="g5590"
+         transform="translate(0,389.91889)">
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999994"
+           id="rect5592"
+           width="47.276115"
+           height="30.634752"
+           x="59.19445"
+           y="508.73499" />
+      </g>
+      <g
+         id="g5594"
+         transform="translate(-94.954339,390.92904)">
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5596"
+           width="61.418251"
+           height="30.634752"
+           x="216.77824"
+           y="508.73499" />
+        <rect
+           y="508.73499"
+           x="295.57013"
+           height="30.634752"
+           width="32.123829"
+           id="rect5598"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5600"
+           width="125.05786"
+           height="30.634752"
+           x="343.0473"
+           y="508.73499" />
+        <rect
+           transform="scale(-1,1)"
+           y="508.73499"
+           x="-483.46869"
+           height="30.634752"
+           width="15.373649"
+           id="rect5602"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="508.73499"
+           x="-499.63113"
+           height="30.634752"
+           width="15.373649"
+           id="rect5604"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="508.73499"
+           x="-515.79358"
+           height="30.634752"
+           width="15.373649"
+           id="rect5606"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+      </g>
+      <g
+         id="g5608"
+         transform="translate(61.619305,427.29453)">
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5610"
+           width="155.78485"
+           height="30.634752"
+           x="-278.40768"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5612"
+           width="15.373649"
+           height="30.634752"
+           x="-293.56003"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5614"
+           width="63.86097"
+           height="30.634752"
+           x="-358.20981"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-293.56003"
+           height="30.634752"
+           width="15.373649"
+           id="rect5616"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-358.20981"
+           height="30.634752"
+           width="63.86097"
+           id="rect5618"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-373.36209"
+           height="30.634752"
+           width="15.373649"
+           id="rect5620"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-422.85956"
+           height="30.634752"
+           width="18.404104"
+           id="rect5622"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5624"
+           width="15.373649"
+           height="30.634752"
+           x="-373.36209"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999976"
+           id="rect5626"
+           width="30.525934"
+           height="30.634752"
+           x="-404.67685"
+           y="544.09027"
+           transform="scale(-1,1)" />
+      </g>
+      <rect
+         transform="scale(-1,1)"
+         y="971.38489"
+         x="-516.80371"
+         height="30.634752"
+         width="18.404104"
+         id="rect5628"
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+      <rect
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+         id="rect5630"
+         width="63.86097"
+         height="30.634752"
+         x="-674.38751"
+         y="971.38489"
+         transform="scale(-1,1)" />
+      <path
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#Arrow2Mend);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 80.812204,785.68192 0,113.13708"
+         id="path5632"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5634"
+         d="M 414.16255,787.70223 320.21836,898.819"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#Arrow2Mend);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:nodetypes="cc" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5636"
+         d="M 241.42646,787.70223 147.48227,898.819"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#Arrow2Mend);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:nodetypes="cc" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#Arrow2Mend);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="M 310.11684,787.70223 216.17265,898.819"
+         id="path5638"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:1.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#Arrow2Mend);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 263.96453,823.08237 78.86498,145.15255"
+         id="path5640"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5642"
+         d="M 517.51283,823.08237 641.67304,968.23492"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:1.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#Arrow2Mend);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       id="g3791"
+       inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         xml:space="preserve"
+         style="font-size:31.50000000000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:118%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono"
+         x="58.588848"
+         y="392.3443"
+         id="text5361"
+         sodipodi:linespacing="118%"><tspan
+           sodipodi:role="line"
+           id="tspan5363"
+           x="58.588848"
+           y="392.3443">for name, book in getBooks():</tspan><tspan
+           sodipodi:role="line"
+           x="58.588848"
+           y="428.06979"
+           id="tspan5365">    book_names[book.id] = name</tspan></text>
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         sodipodi:linespacing="118%"
+         id="text5367"
+         y="534.86218"
+         x="58.588848"
+         style="font-size:31.50000000000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:118%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UbuntuMono;-inkscape-font-specification:UbuntuMono"
+         xml:space="preserve"><tspan
+           y="534.86218"
+           x="58.588848"
+           id="tspan5369"
+           sodipodi:role="line">for book in getBooks():</tspan><tspan
+           y="570.58765"
+           x="58.588848"
+           sodipodi:role="line"
+           id="tspan5371">    if book.active:</tspan><tspan
+           id="tspan5373"
+           y="606.31317"
+           x="58.588848"
+           sodipodi:role="line">        book_names[book.id] = book.name</tspan></text>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         transform="translate(0,-140.4112)"
+         id="g5439">
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999994"
+           id="rect3893"
+           width="47.276115"
+           height="30.634752"
+           x="59.19445"
+           y="508.73499" />
+      </g>
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+         id="rect5393"
+         width="61.418251"
+         height="30.634752"
+         x="122.83406"
+         y="368.32379" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         transform="scale(-1,1)"
+         y="368.32379"
+         x="-202.64627"
+         height="30.634752"
+         width="17.393953"
+         id="rect5401"
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         transform="translate(0,-140.4112)"
+         id="g5431">
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5395"
+           width="61.418251"
+           height="30.634752"
+           x="216.77824"
+           y="508.73499" />
+        <rect
+           y="508.73499"
+           x="295.57013"
+           height="30.634752"
+           width="32.123829"
+           id="rect5397"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5399"
+           width="125.05786"
+           height="30.634752"
+           x="343.0473"
+           y="508.73499" />
+        <rect
+           transform="scale(-1,1)"
+           y="508.73499"
+           x="-483.46869"
+           height="30.634752"
+           width="15.373649"
+           id="rect5403"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="508.73499"
+           x="-499.63113"
+           height="30.634752"
+           width="15.373649"
+           id="rect5407"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="508.73499"
+           x="-515.79358"
+           height="30.634752"
+           width="15.373649"
+           id="rect5409"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         transform="translate(0,-140.4112)"
+         id="g5442">
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5405"
+           width="155.78485"
+           height="30.634752"
+           x="-278.40768"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5411"
+           width="15.373649"
+           height="30.634752"
+           x="-293.56003"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5413"
+           width="63.86097"
+           height="30.634752"
+           x="-358.20981"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-293.56003"
+           height="30.634752"
+           width="15.373649"
+           id="rect5415"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-358.20981"
+           height="30.634752"
+           width="63.86097"
+           id="rect5417"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-373.36209"
+           height="30.634752"
+           width="15.373649"
+           id="rect5419"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-422.85956"
+           height="30.634752"
+           width="18.404104"
+           id="rect5421"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5423"
+           width="15.373649"
+           height="30.634752"
+           x="-373.36209"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999976"
+           id="rect5425"
+           width="30.525934"
+           height="30.634752"
+           x="-404.67685"
+           y="544.09027"
+           transform="scale(-1,1)" />
+      </g>
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         transform="scale(-1,1)"
+         y="403.67908"
+         x="-453.16412"
+         height="30.634752"
+         width="18.404104"
+         id="rect5427"
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+         id="rect5429"
+         width="63.86097"
+         height="30.634752"
+         x="-530.94586"
+         y="403.67908"
+         transform="scale(-1,1)" />
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         transform="translate(0,2.0203057)"
+         id="g5453">
+        <rect
+           y="508.73499"
+           x="59.19445"
+           height="30.634752"
+           width="47.276115"
+           id="rect5455"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999994" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999994"
+           id="rect5644"
+           width="35.154285"
+           height="30.634752"
+           x="119.8036"
+           y="545.10052" />
+        <rect
+           y="545.10052"
+           x="167.28076"
+           height="30.634752"
+           width="65.458862"
+           id="rect5646"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999994" />
+        <rect
+           transform="scale(-1,1)"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999994"
+           id="rect5648"
+           width="11.333036"
+           height="30.634752"
+           x="-245.07266"
+           y="545.10052" />
+        <rect
+           y="545.10052"
+           x="246.07262"
+           height="30.634752"
+           width="97.783745"
+           id="rect5650"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999994" />
+        <rect
+           transform="scale(-1,1)"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5652"
+           width="10.322883"
+           height="30.634752"
+           x="-355.17926"
+           y="545.10052" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         transform="translate(-94.954339,3.0304557)"
+         id="g5457">
+        <rect
+           y="508.73499"
+           x="216.77824"
+           height="30.634752"
+           width="61.418251"
+           id="rect5459"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5461"
+           width="32.123829"
+           height="30.634752"
+           x="295.57013"
+           y="508.73499" />
+        <rect
+           y="508.73499"
+           x="343.0473"
+           height="30.634752"
+           width="125.05786"
+           id="rect5463"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5465"
+           width="15.373649"
+           height="30.634752"
+           x="-483.46869"
+           y="508.73499"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5467"
+           width="15.373649"
+           height="30.634752"
+           x="-499.63113"
+           y="508.73499"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5469"
+           width="15.373649"
+           height="30.634752"
+           x="-515.79358"
+           y="508.73499"
+           transform="scale(-1,1)" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         transform="translate(61.619305,39.395947)"
+         id="g5471">
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-278.40768"
+           height="30.634752"
+           width="155.78485"
+           id="rect5473"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-293.56003"
+           height="30.634752"
+           width="15.373649"
+           id="rect5475"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-358.20981"
+           height="30.634752"
+           width="63.86097"
+           id="rect5477"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5479"
+           width="15.373649"
+           height="30.634752"
+           x="-293.56003"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5481"
+           width="63.86097"
+           height="30.634752"
+           x="-358.20981"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5483"
+           width="15.373649"
+           height="30.634752"
+           x="-373.36209"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+           id="rect5485"
+           width="18.404104"
+           height="30.634752"
+           x="-422.85956"
+           y="544.09027"
+           transform="scale(-1,1)" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-373.36209"
+           height="30.634752"
+           width="15.373649"
+           id="rect5487"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+        <rect
+           transform="scale(-1,1)"
+           y="544.09027"
+           x="-404.67685"
+           height="30.634752"
+           width="30.525934"
+           id="rect5489"
+           style="fill:none;stroke:#ff0000;stroke-width:0.99999976" />
+      </g>
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+         id="rect5491"
+         width="18.404104"
+         height="30.634752"
+         x="-516.80371"
+         y="583.48621"
+         transform="scale(-1,1)" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         transform="scale(-1,1)"
+         y="583.48621"
+         x="-674.38751"
+         height="30.634752"
+         width="63.86097"
+         id="rect5493"
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         transform="scale(-1,1)"
+         y="583.48621"
+         x="-594.58545"
+         height="30.634752"
+         width="64.871124"
+         id="rect5654"
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher2.png"
+         style="fill:none;stroke:#ff0000;stroke-width:0.99999988"
+         id="rect5656"
+         width="14.951232"
+         height="30.634752"
+         x="595.58545"
+         y="583.48621" />
+    </g>
+    <g
+       id="g3910"
+       inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher4.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <use
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher4.png"
+         height="1052.3622"
+         width="744.09448"
+         transform="translate(0,141.42136)"
+         id="use5717"
+         xlink:href="#g5713"
+         y="0"
+         x="0" />
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher4.png"
+         id="g5713">
+        <rect
+           style="fill:#ffeeaa;fill-opacity:1;stroke:#c8ab37;stroke-width:0.99999994"
+           id="rect5249"
+           width="645.83252"
+           height="104.74113"
+           x="54.880798"
+           y="1131.8164" />
+        <rect
+           y="1167.1718"
+           x="54.880798"
+           height="34.030449"
+           width="645.83252"
+           id="rect5705"
+           style="fill:#c6e9af;fill-opacity:1;stroke:#447821;stroke-width:0.88746314999999998;color:#000000;fill-rule:nonzero;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      </g>
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher4.png"
+         style="fill:#ffd42a;stroke:none"
+         id="rect5259"
+         width="94.725883"
+         height="35.040611"
+         x="120.82745"
+         y="1131.8165" />
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher4.png"
+         xml:space="preserve"
+         style="font-size:31.50000000000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:118%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UbuntuMono;-inkscape-font-specification:UbuntuMono"
+         x="58.588848"
+         y="1156.0197"
+         id="text5658"
+         sodipodi:linespacing="118%"><tspan
+           sodipodi:role="line"
+           id="tspan5660"
+           x="58.588848"
+           y="1156.0197">for name, book in getBooks():</tspan><tspan
+           id="tspan5692"
+           sodipodi:role="line"
+           x="58.588848"
+           y="1191.7451" /><tspan
+           sodipodi:role="line"
+           x="58.588848"
+           y="1227.4706"
+           id="tspan5662">    book_names[book.id] = name</tspan></text>
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher4.png"
+         y="1342.9384"
+         x="528.92908"
+         height="35.040611"
+         width="79.573593"
+         id="rect5737"
+         style="fill:#ffd42a;stroke:none" />
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher4.png"
+         sodipodi:linespacing="118%"
+         id="text5664"
+         y="1298.5375"
+         x="58.588848"
+         style="font-size:31.50000000000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:118%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UbuntuMono;-inkscape-font-specification:UbuntuMono"
+         xml:space="preserve"><tspan
+           y="1298.5375"
+           x="58.588848"
+           id="tspan5666"
+           sodipodi:role="line">for book in getBooks():</tspan><tspan
+           y="1334.2629"
+           x="58.588848"
+           sodipodi:role="line"
+           id="tspan5668">    if book.active:</tspan><tspan
+           id="tspan5670"
+           y="1369.9884"
+           x="58.588848"
+           sodipodi:role="line">        book_names[book.id] = book.name</tspan></text>
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-line-matcher4.png"
+         style="fill:#ffd42a;stroke:none"
+         id="rect5739"
+         width="62.401001"
+         height="35.040611"
+         x="123.85791"
+         y="1342.9384" />
+    </g>
+    <text
+       sodipodi:linespacing="118%"
+       id="text5760"
+       y="1547.9587"
+       x="58.588848"
+       style="font-size:31.50000000000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:118%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono"
+       xml:space="preserve"
+       inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-similarity1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         y="1547.9587"
+         x="58.588848"
+         id="tspan5762"
+         sodipodi:role="line">- for name, book in getBooks():</tspan><tspan
+         id="tspan5764"
+         y="1583.6842"
+         x="58.588848"
+         sodipodi:role="line">-     book_names[book.id] = name</tspan><tspan
+         id="tspan5766"
+         y="1619.4097"
+         x="58.588848"
+         sodipodi:role="line">+ for book in getBooks():</tspan><tspan
+         id="tspan5768"
+         y="1655.1353"
+         x="58.588848"
+         sodipodi:role="line">+     if book.active:</tspan><tspan
+         id="tspan5770"
+         y="1690.8607"
+         x="58.588848"
+         sodipodi:role="line">+         return convertToAccount(book)</tspan></text>
+    <g
+       id="g3927"
+       inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-similarity2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g5713"
+         id="use5784"
+         transform="translate(0,788.92914)"
+         width="744.09448"
+         height="1052.3622" />
+      <g
+         transform="translate(0,647.50778)"
+         id="g5786">
+        <rect
+           y="1131.8164"
+           x="54.880798"
+           height="104.74113"
+           width="645.83252"
+           id="rect5788"
+           style="fill:#ffeeaa;fill-opacity:1;stroke:#c8ab37;stroke-width:0.99999994" />
+        <rect
+           style="color:#000000;fill:#c6e9af;fill-opacity:1;fill-rule:nonzero;stroke:#447821;stroke-width:0.88746315;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect5790"
+           width="645.83252"
+           height="34.030449"
+           x="54.880798"
+           y="1167.1718" />
+      </g>
+      <rect
+         y="1779.3242"
+         x="120.82745"
+         height="35.040611"
+         width="94.725883"
+         id="rect5792"
+         style="fill:#ffd42a;stroke:none" />
+      <text
+         sodipodi:linespacing="118%"
+         id="text5794"
+         y="1803.5273"
+         x="58.588848"
+         style="font-size:31.50000000000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:118%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono"
+         xml:space="preserve"><tspan
+           y="1803.5273"
+           x="58.588848"
+           id="tspan5796"
+           sodipodi:role="line">for name, book in getBooks():</tspan><tspan
+           y="1839.2528"
+           x="58.588848"
+           sodipodi:role="line"
+           id="tspan5798" /><tspan
+           id="tspan5800"
+           y="1874.9783"
+           x="58.588848"
+           sodipodi:role="line">    book_names[book.id] = name</tspan></text>
+      <rect
+         style="fill:#ffd42a;stroke:none"
+         id="rect5802"
+         width="15.933983"
+         height="35.040611"
+         x="624.92908"
+         y="1990.446" />
+      <rect
+         y="1990.446"
+         x="128.90868"
+         height="35.040611"
+         width="431.10669"
+         id="rect5812"
+         style="fill:#ffd42a;stroke:none" />
+      <text
+         xml:space="preserve"
+         style="font-size:31.50000000000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:118%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono"
+         x="58.588848"
+         y="1946.0452"
+         id="text5804"
+         sodipodi:linespacing="118%"><tspan
+           sodipodi:role="line"
+           id="tspan5806"
+           x="58.588848"
+           y="1946.0452">for book in getBooks():</tspan><tspan
+           id="tspan5808"
+           sodipodi:role="line"
+           x="58.588848"
+           y="1981.7706">    if book.active:</tspan><tspan
+           sodipodi:role="line"
+           x="58.588848"
+           y="2017.4961"
+           id="tspan5810">        return convertToAccount(book)</tspan></text>
+    </g>
+    <g
+       id="g3944"
+       inkscape:export-filename="/home/mauve/dev/difflib-talk/slides/_static/diffing-similarity3.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <use
+         height="1052.3622"
+         width="744.09448"
+         transform="translate(0,175.76655)"
+         id="use5867"
+         xlink:href="#g5818"
+         y="0"
+         x="0" />
+      <g
+         id="g5818"
+         transform="translate(0,995.00031)">
+        <rect
+           style="fill:#ffeeaa;fill-opacity:1;stroke:#c8ab37;stroke-width:0.99999994"
+           id="rect5820"
+           width="645.83252"
+           height="35.0406"
+           x="54.880798"
+           y="1131.8164" />
+        <rect
+           y="1167.1718"
+           x="54.880798"
+           height="34.030449"
+           width="645.83252"
+           id="rect5822"
+           style="color:#000000;fill:#ffaaaa;fill-opacity:1;fill-rule:nonzero;stroke:#aa0000;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <rect
+           style="color:#000000;fill:#c6e9af;fill-opacity:1;fill-rule:nonzero;stroke:#447821;stroke-width:0.88746315;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect5846"
+           width="645.83252"
+           height="71.406097"
+           x="54.880798"
+           y="1201.517" />
+      </g>
+      <rect
+         style="fill:#ffd42a;stroke:none"
+         id="rect5824"
+         width="94.725883"
+         height="35.040611"
+         x="120.82745"
+         y="2126.8167" />
+      <text
+         xml:space="preserve"
+         style="font-size:31.50000000000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:118%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono"
+         x="58.588848"
+         y="2151.0198"
+         id="text5826"
+         sodipodi:linespacing="118%"><tspan
+           id="tspan5830"
+           sodipodi:role="line"
+           x="58.588848"
+           y="2151.0198">for name, book in getBooks():</tspan><tspan
+           sodipodi:role="line"
+           x="58.588848"
+           y="2186.7454"
+           id="tspan5832">    book_names[book.id] = name</tspan></text>
+      <text
+         sodipodi:linespacing="118%"
+         id="text5838"
+         y="2327.8828"
+         x="58.588848"
+         style="font-size:31.50000000000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:118%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono"
+         xml:space="preserve"><tspan
+           y="2327.8828"
+           x="58.588848"
+           id="tspan5840"
+           sodipodi:role="line">for book in getBooks():</tspan><tspan
+           id="tspan5869"
+           y="2363.6084"
+           x="58.588848"
+           sodipodi:role="line" /><tspan
+           y="2399.3337"
+           x="58.588848"
+           sodipodi:role="line"
+           id="tspan5842">    if book.active:</tspan><tspan
+           id="tspan5844"
+           y="2435.0593"
+           x="58.588848"
+           sodipodi:role="line">        return convertToAccount(book)</tspan></text>
+    </g>
+  </g>
+</svg>
