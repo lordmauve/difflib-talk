@@ -43,6 +43,27 @@ Blockwise similarity matching
     :align: center
 
 
+Similarity Algorithm
+''''''''''''''''''''
+
+.. code:: python
+
+    def similarity(a, b):
+        ca = Counter(bigrams(a))
+        cb = Counter(bigrams(b))
+        denom = sum(ca.itervalues()) + sum(cb.itervalues())
+
+        if not denom:
+            return 1.0
+
+        return sum((ca & cb).itervalues()) * 2.0 / denom
+
+
+    def bigrams(line):
+        for i in xrange(len(line) - 1):
+            yield line[i:i + 2]
+
+
 Line change highlighting
 ------------------------
 
